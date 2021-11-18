@@ -58,14 +58,8 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.blue[800],
                 ),
                 onTap: () {
-                  ElevatedButton(
-                    onPressed: () {
-                      print('object');
-                      Navigator.pushNamedAndRemoveUntil(
-                          context, '/2', (route) => false);
-                    },
-                    child: null,
-                  );
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, '/2', (route) => false);
                 },
               ),
             );
